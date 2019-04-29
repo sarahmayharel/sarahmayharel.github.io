@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>SarahMay's site</title>
-    </head>
-    <body>
-        <h1>Hello Buffyverse :)</h1>
-    </body>
+<head>
+	<link rel="stylesheet" href="main.css">
+	<meta charset="UTF-8">
+	<title>Monk's Cafe</title>
+</head>
+<body align="center">
+ <h1>Monk's Cafe</h1>
+ <h4>"The Coffee Shop"</h4>
+ <img src="http://circuits-assets.generalassemb.ly/prod/asset/5475/toms-restaurant.jpg" height="50%" width="50%">
+ <h2>Reservations</h2>
+ <div class="row">
+    <div class="column">
+        <h3>Make a Reservation</h3>
+        <form>
+           Name: <input type="text" placeholder="Your Name"><br><br>
+           Date: <input type="text" placeholder="Date"><br><br>
+           <button type="submit">Confirm Reservation</button>
+       </form>
+   </div>
+   <div class="column" align="center">
+     <h3>Existing Reservations</h3>
+     <table>
+         <thead>
+         <th>Name</th>
+         <th>Date</th>
+     </thead>
+     <tbody></tbody>
+ </table>
+ </div>
+</div>
+<h2>Come Dine With Us</h2>
+<div id="map"></div>
+<div class="row" id ="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="column">
+        <img src="http://circuits-assets.generalassemb.ly/prod/asset/5474/jerry.jpg" width="50%" height="50%">
+    </div>
+    <div class="column">
+        <p>"Big lettuce, big carrots, tomatoes like volleyballs."</p>
+        <p>-Jerry Seinfeld, on the BIG Salad</p>
+    </div>
+</div>
+<!-- main js -->
+<script type="js/main.js"></script>
+<!-- Google maps script -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbt1M_Y1NT5NIZ27O1y0L-PXT5-bEIjs&callback=initMap" async defer></script>
+</body>
 </html>
