@@ -14,3 +14,7 @@
 body {
 	background: pink;
 }
+
+#herocat {
+	border-radius: 100px;
+}
