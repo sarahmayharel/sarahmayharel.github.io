@@ -10,3 +10,7 @@
   display: table;
   clear: both;
 }
+
+body {
+	background: pink;
+}
