@@ -1,51 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="main.css">
-	<link rel="shortcut icon" href="https://i.imgur.com/WylUs6m.png" />
 	<meta charset="UTF-8">
-	<title>Buffy's House</title>
+	<title>Monk's Café</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
-<body align="center">
- <h1>Buffy's House</h1>
- <h4>"The Cats & Coffee Cafe"</h4>
- <img src="https://i.imgur.com/EPoHRw6.jpg?1" height="50%" width="50%" id="herocat">
- <h2>Reservations</h2>
- <div class="row">
-    <div class="column">
-        <h3>Make a Reservation</h3>
-        <form>
-           Name: <input type="text" placeholder="Your Name"><br><br>
-           Date: <input type="text" placeholder="Date"><br><br>
-           <button type="submit">Confirm Reservation</button>
-       </form>
-   </div>
-   <div class="column" align="center">
-     <h3>Existing Reservations</h3>
-     <table>
-         <thead>
-         <th>Name</th>
-         <th>Date</th>
-     </thead>
-     <tbody></tbody>
- </table>
- </div>
-</div>
-<h2>Come Dine With Us</h2>
-<div id="map"></div>
-<div class="row" id ="reviews">
-    <h2>Customer Reviews</h2>
-    <div class="column">
-        <img src="https://i.imgur.com/vQxRmCP.png">
-    </div>
-    <div class="column">
-        <p>"If the apocalypse comes, beep me."</p>
-        <p>-Buffy Summers</p>
-    </div>
-</div>
-<!-- main js -->
-<script type="js/main.js"></script>
-<!-- Google maps script -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbt1M_Y1NT5NIZ27O1y0L-PXT5-bEIjs&callback=initMap" async defer></script>
+<body data-spy="scroll" data-target=".navbar-inverse" data-offset="50">
+
+	<!-- template for reservation-list -->
+	<script id="reservation-template" type="text/x-handlebars-template">
+		<tr>
+			<td>{{name}}</td>
+			<td>{{day}}</td>
+		</tr>
+	</script>
+
+	<!-- navbar -->
+	<div id="navbar" class="navbar-collapse navbar-inverse collapse navbar-fixed-top">
+		<a href="#" class="navbar-brand">Monk's Café</a>
+		<ul class="nav navbar-nav navbar-right">
+		  <li class="active"><a href="#reservation">Reservation</a></li>
+		  <li><a href="#map">Map</a></li>
+		</ul>
+	</div>
+
+	<div class="container-fluid restaurant-pic">
+		<div class="row">
+			<div class="col-md-12"></div>
+		</div>
+	</div>
+
+	<div id="reservation" class="container-fluid reservation">
+
+		<!-- reservation form -->
+		<div class="row reservation-form-container">
+			<div class="col-md-12 text-center reservation-form">
+				<form class="form-inline reservations">
+				  <div class="form-group">
+				    <input type="text" class="form-control reservation-name" placeholder="Jane Doe">
+				  </div>
+				  <div class="form-group">
+						<div class="dropdown">
+						  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+						    Select A Day
+						    <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu reservation-day">
+						    <li><a>Today</a></li>
+						    <li><a>Tomorrow</a></li>
+						    <li><a>The day after next</a></li>
+						  </ul>
+						</div>
+				  </div>
+				  <button class="btn btn-default reservation-button">Set Reservation</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- reservations -->
+		<table class="table table-striped col-md-12 container-fluid">
+			<h4>Reservations</h4>
+			<thead>
+				<th>Name</th>
+				<th>Day</th>
+			</thead>
+			<tbody class="reservation-list"></tbody>
+		</table>
+	</div>
+
+	<div id="map" class="container-fluid restaurant-locator">
+	</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- handlebars -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <!-- custom js -->
+  <script src="js/main.js"></script>
+
+	<!-- google maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbt1M_Y1NT5NIZ27O1y0L-PXT5-bEIjs&callback=initMap"
+  async defer></script>
 </body>
 </html>
