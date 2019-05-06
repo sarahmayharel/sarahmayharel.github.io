@@ -1,4 +1,6 @@
-  // Your web app's Firebase configuration
+console.log("Hello"); 
+
+// Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyBNiZlPfVQDbgFhgR6snJWPGsmOeMz7duc",
     authDomain: "reservation-site-993f5.firebaseapp.com",
