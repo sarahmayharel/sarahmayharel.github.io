@@ -1,8 +1,8 @@
 .restaurant-pic {
 	height: 50vh;
-	background: url('https://i.ytimg.com/vi/7mphrlxJl5k/maxresdefault.jpg');
+	background: url('https://i.imgur.com/A62GnW1.jpg?1');
 	background-size: cover;
-	background-position: 0 40%;
+	background-position: center;
 }
 
 .restaurant-info {
@@ -17,9 +17,10 @@
 .reservation-form-container {
 	position: relative;
 	height: 100%;
-	background: url('http://ih1.redbubble.net/image.80745362.8983/flat,800x800,075,t.u4.jpg');
-	background-size: cover;
-	background-position: center;
+	background: url('https://i.imgur.com/lhabMls.png');
+	background-size: 30%;
+	background-position: cover;
+	background-repeat: repeat;
 }
 
 .reservation-form {
@@ -30,4 +31,31 @@
 
 .restaurant-locator {
 	height: 50vh;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px grey;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h3 {
+	color: white;
+	text-align: center;
+	text-shadow: 3px 3px black;
+	font-weight: bold;
+}
+
+.welcome {
+	padding: 100px;
 }
