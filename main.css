@@ -41,6 +41,9 @@
   transform: translate(-50%, -50%);
 }
 
+#navbar {
+}
+
 h1 {
   text-align: center;
   color: white;
@@ -56,6 +59,59 @@ h3 {
 	font-weight: bold;
 }
 
+#findus {
+	color: black;
+	text-align: center;
+	text-shadow: 2px 2px #7AADB9;
+	font-weight: bold;	
+}
+
 .welcome {
 	padding: 100px;
+}
+
+.meet {
+	border-radius: 50%;
+}
+
+.mouseover {
+	opacity: .5;
+}
+
+footer {
+	background-color: #7AADB9;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold
+}
+
+/*footer social icons*/
+.fa {
+  padding: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  /*background: #3B5998; */
+  color: black;
+}
+
+.fa-twitter {
+  /*background: #55ACEE;*/
+  color: black;
+}
+
+.fa-linkedin {
+  /*background: #007bb5;*/
+  color: black;
 }

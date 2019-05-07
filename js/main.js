@@ -1,5 +1,3 @@
-console.log("Hello"); 
-
 // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyBNiZlPfVQDbgFhgR6snJWPGsmOeMz7duc",
@@ -60,6 +58,6 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: {lat: 40.7128, lng: -74.0059},
     map: map,
-    title: 'Monks Café'
+    title: 'Buffys House'
   });
-}
+};
