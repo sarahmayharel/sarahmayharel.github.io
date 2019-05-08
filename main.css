@@ -59,23 +59,32 @@ h3 {
 	font-weight: bold;
 }
 
-#findus {
-	color: black;
+h2 {
+	color: white;
 	text-align: center;
-	text-shadow: 2px 2px #7AADB9;
+	text-shadow: 3px 3px black;
+	font-weight: bold;
+}
+
+#findus {
+	color: #7AADB9;
+	text-align: center;
+	text-shadow: 2px 2px grey;
 	font-weight: bold;	
 }
 
 .welcome {
-	padding: 100px;
+	padding: 50px;
+	text-align: center;
+}
+
+#moreinfo {
+	padding:50px;
+	text-align: center;
 }
 
 .meet {
 	border-radius: 50%;
-}
-
-.mouseover {
-	opacity: .5;
 }
 
 footer {

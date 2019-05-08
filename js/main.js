@@ -61,3 +61,8 @@ function initMap() {
     title: 'Buffys House'
   });
 };
+
+function changeOpacity(newOpacity) {
+  var elem = document.getElementById('aboutpic');
+  elem.style.opacity = newOpacity;
+};
