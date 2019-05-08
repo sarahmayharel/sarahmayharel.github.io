@@ -66,6 +66,10 @@ h2 {
 	font-weight: bold;
 }
 
+.opacity {
+	opacity: .5;
+}
+
 #findus {
 	color: #7AADB9;
 	text-align: center;

@@ -66,3 +66,7 @@ function changeOpacity(newOpacity) {
   var elem = document.getElementById('aboutpic');
   elem.style.opacity = newOpacity;
 };
+
+$("#moreinfo").on('mouseover mouseleave', '.meet', function(){
+  $(this).toggleClass('opacity');
+});
